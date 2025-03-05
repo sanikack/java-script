@@ -1,0 +1,12 @@
+var a= [10,20,30,40];
+a.push (50);
+var b= [5,10,15,20,25];
+document.write("the arrays are "+"<br>"+ a+"<br>");
+document.write(b+"<br>");
+var temp;
+temp=a;
+a=b;
+b=temp;
+document.write("after swaping"+"<br>");
+document.write("array 1: "+a +"<br>");
+document.write("array 2: "+b +"<br>");
