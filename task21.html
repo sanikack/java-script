@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisible</title>
+</head>
+<body>
+    <center>
+    <h1>DIVISIBILITY CHECK</h1>
+    <br><br>
+
+     number1:
+    <input type="text" id="number1">
+    <br><br>
+    number2:
+    <input type="text" id="number2">
+    <br><br>
+
+    <button id="submit" onclick="check()">submit</button>
+
+    <h2 id="result"></h2>
+</center>
+
+<script>
+    function check(){
+        var first= document.getElementById("number1").value;
+        var secound= document.getElementById("number2").value;
+
+        if(first.value%secound.value===0){
+            document.getElementById("result").innerHTML=first+"is divisible by"+secound;
+        }
+        else{
+            document.getElementById("result").innerHTML=first+"is divisible by"+secound;
+        }
+
+    }
+</script>
+</body>
+</html>

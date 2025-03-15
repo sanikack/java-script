@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matA= [[2,4,3],[4,1,5],[3,1,2]];
+        var matB= [[1,4,3],[5,1,5],[6,1,1]];
+
+        var result= [[],[],[]];
+        for(var i=0;i<matA.length;i++){
+            for(var j=0;j<matA[i].length;j++){
+                result[i][j]= matA[i][j]+ matB[i][j];
+                
+            }
+           
+        }
+        document.write(result+" ");
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <center>
+    <h1>calculator</h1>
+    <br><br>
+    <label for="">number1</label>
+
+    <input type="text" id="number1">
+    <label for="">number2</label>
+    <input type="text" id="number2">
+    <br><br><br>
+    <label for="">select your operation</label>
+    <br><br>
+
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="divi()">
+    <br><br>
+
+    <input type="text" id="answer" placeholder=" your answer">
+</center>
+
+    <script>
+        function sum(){
+            var a= document.getElementById("number1");
+            var b= document.getElementById("number2");
+            var result= Number (a.value)+ Number (b.value);
+            document.getElementById("answer").value=result;
+        }
+
+        function sub(){
+            var a= document.getElementById("number1");
+            var b= document.getElementById("number2");
+            var result= Number (a.value)- Number (b.value);
+            document.getElementById("answer").value=result;
+        }
+
+        function multi(){
+            var a= document.getElementById("number1");
+            var b= document.getElementById("number2");
+            var result= Number (a.value)* Number (b.value);
+            document.getElementById("answer").value=result;
+        }
+
+        function divi(){
+            var a= document.getElementById("number1");
+            var b= document.getElementById("number2");
+            var result= Number (a.value)/ Number (b.value);
+            document.getElementById("answer").value=result;
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var word="  my   name    is      sanika."
+        var word1="";
+        var space;
+
+        for(var char of word){
+            if(char===" "){
+                if(!space){
+                    word1+=char
+                    space=true;
+                }
+            }
+            else{
+                word1+=char
+                space=false;
+            }
+        }
+
+        console.log(word1);
+        
+
+
+
+    </script>
+    
+</body>
+</html>
